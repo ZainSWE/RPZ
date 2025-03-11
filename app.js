@@ -72,12 +72,12 @@
       }
 
       function resetScore() {
-        score.wins = 0;
-        score.losses = 0;
-        score.ties = 0;
         if (!score.counter) {
           score.counter = 0;
         }
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
         score.counter++;
         localStorage.removeItem('score');
 
